@@ -1,0 +1,42 @@
+{
+    "name": "jiny/auth-api",
+    "description": "auth api for JinyPHP",
+    "keywords": [
+        "jinyPHP",
+        "framwork"
+    ],
+    "homepage": "http://www.jinyphp.com",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "hojinlee",
+            "email": "infohojin@gmail.com",
+            "homepage": "http://www.jinyphp.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jiny\\Auth\\API\\":"/"
+        },
+        "files" : [
+            "Helpers/Helper.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jiny\\Auth\\API\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jiny\\Auth\\API\\JinyAuthAPIServiceProvider"
+            ]
+        }
+    }
+}
