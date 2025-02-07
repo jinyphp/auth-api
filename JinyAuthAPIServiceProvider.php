@@ -1,5 +1,5 @@
 <?php
-namespace Jiny\Users\Emoney;
+namespace Jiny\Auth\API;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Blade;
@@ -8,9 +8,9 @@ use Livewire\Livewire;
 
 use Illuminate\Routing\Router;
 
-class JinyUserEmoneyServiceProvider extends ServiceProvider
+class JinyAuthAPIServiceProvider extends ServiceProvider
 {
-    private $package = "jiny-user-emoney";
+    private $package = "jiny-auth-api";
     public function boot()
     {
         // 모듈: 라우트 설정
